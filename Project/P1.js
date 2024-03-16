@@ -15,15 +15,20 @@ title1.addEventListener('click', function(){
 //form valideren
 function formChecker(event){
     event.preventDefault();
-    let mijnForm = document.getElementById('mijnForm');
-    let geselecteerdeWaarde = mijnForm.value;
+    
+    let mijnForm = document.getElementsByClassName('MyLittleForm');
+    let ingevoerdeWaarde = document.getElementById('favCharacter').value;
 
-    if(geselecteerdeWaarde == null || geselecteerdeWaarde == '' ){
+    if(ingevoerdeWaarde == null || ingevoerdeWaarde == '' ){
         alert('Hey, you have to choose your favorite character!!');
         return false;
+    }else{
+        alert('You have selected: ' + ingevoerdeWaarde + ' as your favorite character');
     }
 }
 
+
+//Event
 
 let formElement = document.getElementById('mijnForm');
 formElement.addEventListener('submit', formChecker);
@@ -45,3 +50,33 @@ revealAntwoord.addEventListener('click',function(){
     let correctAntwoord = document.createTextNode(revealAntwoord.textContent = `De time Aang was in the ice berg is: ${AantalJarenInIjs}` );
 })
 
+// template literals
+
+let nameRoku = 'Avatar Roku'
+let ageRoku = 70
+
+console.log(`My name is ${nameRoku} and I am ${ageRoku} years old`)
+
+
+
+
+//destructuring
+
+let pSubbending = document.getElementById('pSubbending');
+
+const subBending = {
+    earthbending: 'lavabending, seismic sense, metalbending',
+    airbending: 'spiritual projection, flying, soundbending',
+    waterbending: 'bloodbending, healing, plantbending',
+    firebending: 'lightning, combustion, blue fire'
+}
+
+differentBending(subBending)
+
+function differentBending({earthbending, airbending, waterbending, firebending}){
+
+    let newPSubbending = document.createTextNode(pSubbending.textContent = `Some of the different bending techniques are, for erthbending: ${earthbending}, the airnation could:  ${airbending}, in the watertribes the poeple could: ${waterbending} and the ruthless firenation made use of: ${firebending}`);
+    
+}
+
+differentBending(subBending)
