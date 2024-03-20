@@ -80,3 +80,36 @@ function differentBending({earthbending, airbending, waterbending, firebending})
 }
 
 differentBending(subBending)
+
+
+//api toevoegen
+
+let apiPlaats = document.getElementsByClassName('plaatsVoorApi');
+
+
+function vriendenEnVijanden(event) {
+    event.preventDefault();
+    
+    let nationInput = document.getElementById('nationQuestion').value;
+    
+
+let data = fetch(`https://last-airbender-api.fly.dev/api/v1/characters?affiliation=${nationInput}`)
+        .then(apiPlaats => apiPlaats.json())
+        .then(json => {
+
+
+            const nation = json.affiliation;
+            const foto = json.photoUrl;
+            const allies = json.allies;
+            const enemies = json.enemies;
+
+            apiPlaats = `
+                <h2> (${nation})</h2>
+                <p>Allies: ${allies}</p>
+                <p>Enemies: ${enemies}</p>
+                <img src="${foto}" alt="${nation} Poster">
+            `;
+            console.log(apiPlaats);
+            document.getElementById('plaatsVoorApi').innerHTML = apiPlaats;
+            
+        })}
