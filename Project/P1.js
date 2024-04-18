@@ -13,18 +13,48 @@ title1.addEventListener('click', function(){
 });
 
 //form valideren
+
+let display = document.getElementById('infoCharacters');
 function formChecker(event){
     event.preventDefault();
-    
-    let mijnForm = document.getElementsByClassName('MyLittleForm');
-    let ingevoerdeWaarde = document.getElementById('favCharacter').value;
 
-    if(ingevoerdeWaarde == null || ingevoerdeWaarde == '' ){
-        alert('Hey, you have to choose your favorite character!!');
+    let mijnForm = document.getElementsByClassName('MyLittleForm');
+    let ingevoerdeWaarde = document.getElementById('favCharacter').value.toLowerCase();
+
+    let data = fetch('data.json')
+    .then(response => response.json())
+    .then(json => {
+    
+    
+    let character = json.find(character => character.name.toLowerCase() === ingevoerdeWaarde.toLowerCase());
+
+    if (character){
+           
+        
+        let { name, element, age, role, affiliation, description, allies, enemies, quote } = character;
+
+        display.innerHTML = `
+        <p>The name of your character is ${name}, the element this person bends is ${element}
+        . He or she is ${age}. This character's role is ${role}, the affiliation this person has is
+        ${affiliation}. A little description of your character: ${description}. The allies this person has are 
+        ${allies.join(', ')} and the enemies are ${enemies.join(', ')}. Last but not least a known quote of your character is
+        ${quote} </p>
+    `;
+
+            document.getElementById('infoCharacters').innerHTML = display;
+    }else{
+        alert('Hey, you have to choose your favorite character!!');}
+        
+        
+        
+    })
+
+   /*  if(ingevoerdeWaarde == null || ingevoerdeWaarde == '' ){
+        //alert('Hey, you have to choose your favorite character!!');
         return false;
     }else{
         alert('You have selected: ' + ingevoerdeWaarde + ' as your favorite character');
-    }
+    } */
 }
 
 
@@ -80,36 +110,3 @@ function differentBending({earthbending, airbending, waterbending, firebending})
 }
 
 differentBending(subBending)
-
-
-//api toevoegen
-
-let apiPlaats = document.getElementsByClassName('plaatsVoorApi');
-
-
-function vriendenEnVijanden(event) {
-    event.preventDefault();
-    
-    let nationInput = document.getElementById('nationQuestion').value;
-    
-
-let data = fetch(`https://last-airbender-api.fly.dev/api/v1/characters?affiliation=${nationInput}`)
-        .then(apiPlaats => apiPlaats.json())
-        .then(json => {
-
-
-            const nation = json.affiliation;
-            const foto = json.photoUrl;
-            const allies = json.allies;
-            const enemies = json.enemies;
-
-            apiPlaats = `
-                <h2> (${nation})</h2>
-                <p>Allies: ${allies}</p>
-                <p>Enemies: ${enemies}</p>
-                <img src="${foto}" alt="${nation} Poster">
-            `;
-            console.log(apiPlaats);
-            document.getElementById('plaatsVoorApi').innerHTML = apiPlaats;
-            
-        })}

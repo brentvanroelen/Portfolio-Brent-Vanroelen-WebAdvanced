@@ -1,0 +1,101 @@
+{
+    "characters": [
+      {
+        "name": "Aang",
+        "element": "Air",
+        "role": "Avatar",
+        "description": "Aang is the last Airbender and the current Avatar, tasked with bringing balance to the world.",
+        "affiliation": "Air Nomads",
+        "image": "aang.jpg",
+        "allies": ["Katara", "Sokka", "Toph", "Zuko", "Iroh"],
+        "enemies": ["Fire Lord Ozai", "Azula"],
+        "quote": "When we hit our lowest point, we are open to the greatest change."
+      },
+      {
+        "name": "Katara",
+        "element": "Water",
+        "role": "Waterbender",
+        "description": "Katara is a skilled Waterbender from the Southern Water Tribe, known for her compassion and determination.",
+        "affiliation": "Southern Water Tribe",
+        "image": "katara.jpg",
+        "allies": ["Aang", "Sokka", "Toph", "Zuko", "Iroh"],
+        "enemies": ["Fire Nation", "Azula"],
+        "quote": "I will never, ever turn my back on people who need me!"
+      },
+      {
+        "name": "Sokka",
+        "role": "Non-bender",
+        "description": "Sokka is a resourceful warrior from the Southern Water Tribe, relying on his intelligence and humor in battles.",
+        "affiliation": "Southern Water Tribe",
+        "image": "sokka.jpg",
+        "allies": ["Aang", "Katara", "Toph", "Zuko", "Iroh"],
+        "enemies": ["Fire Nation", "Azula"],
+        "quote": "I'm just a guy with a boomerang. I didn't ask for all this flying and magic."
+      },
+      {
+        "name": "Zuko",
+        "element": "Fire",
+        "role": "Firebender",
+        "description": "Zuko is the banished prince of the Fire Nation, on a quest to capture the Avatar and restore his honor.",
+        "affiliation": "Fire Nation",
+        "image": "zuko.jpg",
+        "allies": ["Aang", "Katara", "Sokka", "Toph", "Iroh"],
+        "enemies": ["Avatar", "Fire Lord Ozai", "Azula"],
+        "quote": "I know my own destiny, Uncle. It's time you stopped believing in false hope and started believing in me."
+      },
+      {
+        "name": "Toph",
+        "element": "Earth",
+        "role": "Earthbender",
+        "description": "Toph is a blind Earthbending prodigy, renowned for her seismic sense and tough demeanor.",
+        "affiliation": "Earth Kingdom",
+        "image": "toph.jpg",
+        "allies": ["Aang", "Katara", "Sokka", "Zuko", "Iroh"],
+        "enemies": ["Fire Nation", "Azula"],
+        "quote": "There it is! The ancient, mystical art of... sock puppetry."
+      },
+      {
+        "name": "Iroh",
+        "element": "Fire",
+        "role": "Firebender",
+        "description": "Iroh is a retired Fire Nation general and uncle to Zuko, known for his wisdom, tea-making skills, and mastery of Firebending.",
+        "affiliation": "Fire Nation",
+        "image": "iroh.jpg",
+        "allies": ["Aang", "Katara", "Sokka", "Toph", "Zuko"],
+        "enemies": ["Fire Lord Ozai", "Azula"],
+        "quote": "Pride is not the opposite of shame, but its source. True humility is the only antidote to shame."
+      },
+      {
+        "name": "Azula",
+        "element": "Fire",
+        "role": "Firebender",
+        "description": "Azula is the daughter of Fire Lord Ozai and sister to Zuko, known for her exceptional Firebending skills and manipulative nature.",
+        "affiliation": "Fire Nation",
+        "image": "azula.jpg",
+        "allies": ["Fire Lord Ozai", "Mai", "Ty Lee"],
+        "enemies": ["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"],
+        "quote": "No, what are you doing, Zuko? That's the **wrong way!** The **wrong way!**"
+      },
+      {
+        "name": "Fire Lord Ozai",
+        "element": "Fire",
+        "role": "Firebender",
+        "description": "Fire Lord Ozai is the ruler of the Fire Nation and the main antagonist of the series, aiming to conquer the world and maintain his power.",
+        "affiliation": "Fire Nation",
+        "image": "ozai.jpg",
+        "allies": ["Azula", "Mai", "Ty Lee"],
+        "enemies": ["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"],
+        "quote": "You will learn respect, and suffering will be your teacher."
+      },
+      {
+        "name": "Momo",
+        "role": "Pet",
+        "description": "Momo is a flying lemur and loyal companion to Team Avatar, often providing comic relief and occasional assistance in their adventures.",
+        "affiliation": "Team Avatar",
+        "image": "momo.jpg",
+        "allies": ["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"],
+        "quote": "*chittering noises*"
+      }
+    ]
+  }
+  
