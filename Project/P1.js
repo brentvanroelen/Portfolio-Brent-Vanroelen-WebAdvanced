@@ -19,43 +19,39 @@ function formChecker(event){
     event.preventDefault();
 
     let mijnForm = document.getElementsByClassName('MyLittleForm');
-    let ingevoerdeWaarde = document.getElementById('favCharacter').value.toLowerCase();
+    let ingevoerdeWaarde = document.getElementById('favCharacter').value;
 
-    let data = fetch('data.json')
+    let data = fetch('json/data.json')
     .then(response => response.json())
     .then(json => {
+        
+        let gevondenCharacter = false;
     
+    for(let i = 0; i < json.length; i++){
+        if(json[i].name === ingevoerdeWaarde){
     
-    let character = json.find(character => character.name.toLowerCase() === ingevoerdeWaarde.toLowerCase());
 
-    if (character){
-           
-        
-        let { name, element, age, role, affiliation, description, allies, enemies, quote } = character;
-
-        display.innerHTML = `
-        <p>The name of your character is ${name}, the element this person bends is ${element}
-        . He or she is ${age}. This character's role is ${role}, the affiliation this person has is
-        ${affiliation}. A little description of your character: ${description}. The allies this person has are 
-        ${allies.join(', ')} and the enemies are ${enemies.join(', ')}. Last but not least a known quote of your character is
-        ${quote} </p>
-    `;
-
-            document.getElementById('infoCharacters').innerHTML = display;
-    }else{
-        alert('Hey, you have to choose your favorite character!!');}
+            display.innerHTML = `
+            <p>The name of your character is ${json[i].name}, the element this person bends is ${json[i].element}.
+            This character's role is ${json[i].role}, the affiliation this person has is
+            ${json[i].affiliation}. A little description of your character: ${json[i].description}. The allies this person has are 
+            ${json[i].allies} and the enemies are ${json[i].enemies}. Last but not least a known quote of your character is: '
+            ${json[i].quote}'. </p>
+        `;
+        gevondenCharacter = true;
+        break;
+        }
+        document.getElementById('infoCharacters').innerHTML = display;
+    
+         
         
         
-        
-    })
-
-   /*  if(ingevoerdeWaarde == null || ingevoerdeWaarde == '' ){
-        //alert('Hey, you have to choose your favorite character!!');
-        return false;
-    }else{
-        alert('You have selected: ' + ingevoerdeWaarde + ' as your favorite character');
-    } */
+}if (!gevondenCharacter){
+    alert('Character not found');
 }
+})}
+
+
 
 
 //Event
