@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 //vars
 let title1 = document.getElementById('h1');
@@ -15,7 +15,7 @@ title1.addEventListener('click', function(){
 //form valideren
 
 let display = document.getElementById('infoCharacters');
-function formChecker(event){
+ let formChecker = (event) =>{
     event.preventDefault();
 
     let mijnForm = document.getElementsByClassName('MyLittleForm');
@@ -43,11 +43,9 @@ function formChecker(event){
         }
         document.getElementById('infoCharacters').innerHTML = display;
     
-         
-        
-        
-}if (!gevondenCharacter){
-    alert('Character not found');
+}
+        if (!gevondenCharacter){
+            alert('Character not found');
 }
 })}
 
@@ -68,23 +66,11 @@ let AangleeftijdUitIjs = 12;
 
 let AantalJarenInIjs = leeftijdAang - AangleeftijdUitIjs;
 
-
-
 let revealAntwoord = document.getElementById('antwoord');
 
 revealAntwoord.addEventListener('click',function(){
     let correctAntwoord = document.createTextNode(revealAntwoord.textContent = `De time Aang was in the ice berg is: ${AantalJarenInIjs}` );
 })
-
-// template literals
-
-let nameRoku = 'Avatar Roku'
-let ageRoku = 70
-
-console.log(`My name is ${nameRoku} and I am ${ageRoku} years old`)
-
-
-
 
 //destructuring
 
@@ -104,5 +90,19 @@ function differentBending({earthbending, airbending, waterbending, firebending})
     let newPSubbending = document.createTextNode(pSubbending.textContent = `Some of the different bending techniques are, for erthbending: ${earthbending}, the airnation could:  ${airbending}, in the watertribes the poeple could: ${waterbending} and the ruthless firenation made use of: ${firebending}`);
     
 }
-
 differentBending(subBending)
+
+
+// spread en rest operator
+
+let dierenAtla = ["Sky Bison", "Komodo Rhino", "Badger Mole", "Armadillo Lion", "Shirshu"];
+let dierenKorra = ["Polar Bear Dog","Fire Ferret","Dragon","Spirit Wild Creatures"];
+
+let alleDieren = [...dierenAtla, ...dierenKorra];
+let = [firstAnimal, ...restOfTheArray] = alleDieren;
+
+let pFirstAninmal = document.getElementById('skyBison');
+
+console.log("The first animal from this array is: ", firstAnimal);
+let displayFirstAninmal = document.createTextNode(pFirstAninmal.textContent = `The first animal from the array is: ${firstAnimal}`);
+console.log("The rest of this array:" , restOfTheArray);

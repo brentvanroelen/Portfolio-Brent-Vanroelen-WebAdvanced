@@ -1,0 +1,66 @@
+body{
+    font-size: larger;
+    
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+h1{
+    color:white;
+}
+
+
+h2{
+    color: #333;
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+
+
+}
+
+a:hover{
+    color: blue;
+}
+
+p{
+    display: block;
+    text-align: center;
+}
+
+.myLittleForm{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
+img{
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: bisonFlying;
+    animation-duration: 5s;
+}
+
+@keyframes bisonFlying{
+    0% { transform: translateX(-200px); }
+    20%{transform: rotate(90deg);}
+    30%{transform: rotate(180deg);}
+    50% { transform: translateX(300px); }
+    70%{transform: translateY(200px);}
+    85%{transform: rotate(275deg);}
+    100% { transform: translate(100px,100px);
+    }}
+    
