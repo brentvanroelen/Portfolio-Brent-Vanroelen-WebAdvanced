@@ -26,6 +26,11 @@ a{
 
 
 }
+#tt{
+    text-align: center;
+    text-decoration: none;
+    
+}
 
 a:hover{
     color: blue;
@@ -43,9 +48,14 @@ p{
     text-align: center;
 
 }
-
-
 img{
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bisonFly{
     display: block;
     max-width: 50%;
     margin-left: auto;
@@ -63,4 +73,39 @@ img{
     85%{transform: rotate(275deg);}
     100% { transform: translate(100px,100px);
     }}
+    
+
+
+   
+    
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        margin-top: 2.5%;
+        padding: 20px;
+        border: 5px solid black;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container ul {
+        list-style: none; 
+        padding: 0; 
+    }
+    
+    .container ul li {
+        margin: 10px 0; 
+    }
+    
+    .container ul li img {
+        max-width: 200px; 
+    }
+    
+    
     

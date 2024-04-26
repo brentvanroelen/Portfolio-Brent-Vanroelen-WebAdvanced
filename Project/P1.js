@@ -1,4 +1,4 @@
-//'use strict';
+window.onload
 
 //vars
 let title1 = document.getElementById('h1');
@@ -98,11 +98,71 @@ differentBending(subBending)
 let dierenAtla = ["Sky Bison", "Komodo Rhino", "Badger Mole", "Armadillo Lion", "Shirshu"];
 let dierenKorra = ["Polar Bear Dog","Fire Ferret","Dragon","Spirit Wild Creatures"];
 
-let alleDieren = [...dierenAtla, ...dierenKorra];
-let = [firstAnimal, ...restOfTheArray] = alleDieren;
+        let alleDieren = [...dierenAtla, ...dierenKorra];
+        let = [firstAnimal, ...restOfTheArray] = alleDieren;
 
-let pFirstAninmal = document.getElementById('skyBison');
+        let pFirstAninmal = document.getElementById('skyBison');
 
-console.log("The first animal from this array is: ", firstAnimal);
-let displayFirstAninmal = document.createTextNode(pFirstAninmal.textContent = `The first animal from the array is: ${firstAnimal}`);
-console.log("The rest of this array:" , restOfTheArray);
+        console.log("The first animal from this array is: ", firstAnimal);
+        let displayFirstAninmal = document.createTextNode(pFirstAninmal.textContent = `The first animal from the array is: ${firstAnimal}`);
+        console.log("The rest of this array:" , restOfTheArray);
+
+
+
+// callbackfunction
+
+let pCallback = document.getElementById('pCallback');
+
+    let callbackfunction = (callback) => {
+
+
+    let livaActionPrint = "Avatar: The Last Airbender is an American live-action series from streaming service Netflix. The series premiered on February 22, 2024 and is based on the original animated series Avatar: The Legend of AangThe story follows young Aang, who discovers he is the new Avatar and must save the world. He must master all four elements - water, earth, fire and air - to end the war being waged by the Fire Nation led by Fire Lord Ozai. The series has a cast that includes Gordon Cormier as Avatar Aang, Kiawentiio as Katara, Ian Ousley as Sokka, and Daniel Dae Kim as Fire Lord Ozai.";
+    
+
+
+
+    pCallback.textContent = livaActionPrint;
+
+}
+callbackfunction(pCallback);
+
+//promise
+let button = document.getElementById('adventureButton');
+
+
+async function adventureTime(event){
+    
+    if (event){
+        event.preventDefault()
+        }
+    
+
+        await new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let time = true;
+                if (time) {
+                    resolve('APPA YIP YIP TO THE NORTH POLE');
+                } else {
+                    reject('Appa is still trapped in Basing Se');
+                }
+            }, 1000)
+        
+        
+        }
+        )
+    }
+
+
+
+button.addEventListener('click', async (event) => {
+    
+    
+    adventureTime(event)
+        .then((message) => {
+            alert('APPA YIP YIP TO THE NORTH POLE')
+        })
+
+        .catch(error => {
+            alert('Appa is still trapped in Basing Se')
+        })
+})

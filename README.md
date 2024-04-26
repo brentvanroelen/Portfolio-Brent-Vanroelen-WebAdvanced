@@ -19,3 +19,5 @@ https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/
 Heb voor de formchecker chat gpt gebruikt en een aantal aanpassingen gemaakt: https://chat.openai.com/share/85e18fc8-f50b-4b14-865b-fcd1b52a50ca
 
 Weer info gevraagd aan chat gpt om diersoorten te geven voor mijn array van spread: https://chat.openai.com/share/f913f81a-f4f6-4701-af95-9c623db8b3f1
+
+Heb voor de info van de callback functie gebruik gemaakt van copilot: https://copilot.microsoft.com/sl/g7eNGBCYHDM
