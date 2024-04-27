@@ -1,11 +1,21 @@
-window.onload
+//window.onload
 
 //vars
 let title1 = document.getElementById('h1');
 let title2 = document.getElementById('h2');
 
-//DOM manipulatie
-let newTitle2 = document.createTextNode(title2.textContent = 'Zuko');
+//DOM manipulatie + selfexecuting function
+
+(function(){
+       
+    
+    document.addEventListener('DOMContentLoaded', function(){
+    
+        let newTitle2 = document.createTextNode(title2.textContent = 'Zuko');
+
+    });
+
+})();
 
 //Event
 title1.addEventListener('click', function(){
@@ -14,12 +24,17 @@ title1.addEventListener('click', function(){
 
 //form valideren
 
-let display = document.getElementById('infoCharacters');
- let formChecker = (event) =>{
-    event.preventDefault();
+    
+    
+        let display = document.getElementById('infoCharacters');
+    let formChecker = (event) =>{
+        event.preventDefault();
 
-    let mijnForm = document.getElementsByClassName('MyLittleForm');
-    let ingevoerdeWaarde = document.getElementById('favCharacter').value;
+        let mijnForm = document.getElementsByClassName('MyLittleForm');
+        let ingevoerdeWaarde = document.getElementById('favCharacter').value;
+        localStorage.setItem('favCharacter', ingevoerdeWaarde);
+    //localStorage.clear(); 
+    //gebruiken indien je de localstorage wilt clearen(om een nieuw character in te voeren)(zowel het lokaal opslaan als verschillende characters werkt)
 
     let data = fetch('json/data.json')
     .then(response => response.json())
@@ -46,8 +61,23 @@ let display = document.getElementById('infoCharacters');
 }
         if (!gevondenCharacter){
             alert('Character not found');
+
 }
-})}
+
+
+
+
+
+    })}
+
+
+window.onload = () =>{
+
+    let favorieteCharacter = localStorage.getItem('favCharacter');
+    if(favorieteCharacter){
+        document.getElementById('favCharacter').value = favorieteCharacter;
+    }
+}
 
 
 
