@@ -21,3 +21,16 @@ Heb voor de formchecker chat gpt gebruikt en een aantal aanpassingen gemaakt: ht
 Weer info gevraagd aan chat gpt om diersoorten te geven voor mijn array van spread: https://chat.openai.com/share/f913f81a-f4f6-4701-af95-9c623db8b3f1
 
 Heb voor de info van de callback functie gebruik gemaakt van copilot: https://copilot.microsoft.com/sl/g7eNGBCYHDM
+
+Foto's:
+(van boven op de pagina naar beneden)
+
+Foto header:https://collider.com/avatar-the-last-airbender-show-ending-explained/
+Foto Sky bison:https://avatar.fandom.com/wiki/Flying_bison
+Foto North Pole:https://25.media.tumblr.com/tumblr_m10aj1UKon1r1nmpao2_500.png
+Eerste foto van het album: https://ew.com/tv/ranking-avatar-the-last-airbender/?utm_source=pinterest.com&utm_medium=social&utm_campaign=social-share-gallery&utm_content=20220225&utm_term=undefined
+Tweede foto van het album: https://twitter.com/avatarnews_/status/1596404424124997632?s=12&t=5_OjkMXepNGjBVmX9nWOVw
+Derde foto van het album: https://ew.com/tv/ranking-avatar-the-last-airbender/?utm_source=pinterest.com&utm_medium=social&utm_campaign=social-share-gallery&utm_content=20201220&utm_term=undefined
+Vierde foto van het album: https://avatar.fandom.com/wiki/Western_Air_Temple
+Vijfde foto van het album: https://screenrant.com/avatar-last-airbender-cast-image-aang-katara-sokka-zuko/
+Zesde foto van het album: https://twitter.com/mrluckytobeborn/status/1564619195677134858
