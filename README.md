@@ -20,7 +20,9 @@ Heb voor de formchecker chat gpt gebruikt en een aantal aanpassingen gemaakt: ht
 
 Weer info gevraagd aan chat gpt om diersoorten te geven voor mijn array van spread: https://chat.openai.com/share/f913f81a-f4f6-4701-af95-9c623db8b3f1
 
-Heb voor de info van de callback functie gebruik gemaakt van copilot: https://copilot.microsoft.com/sl/g7eNGBCYHDM
+Heb voor de info van de callback functie gebruik gemaakt van copilot: https://copilot.microsoft.com/sl/d1U1Fj3Kzi8
+
+Vraag aan ChatGPT om mijn project te beoordelen: https://chatgpt.com/share/e87a62d2-3cb1-4df3-99fa-e45569512040
 
 Foto's:
 (van boven op de pagina naar beneden)
