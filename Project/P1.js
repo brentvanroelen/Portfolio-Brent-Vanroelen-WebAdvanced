@@ -196,3 +196,11 @@ button.addEventListener('click', async (event) => {
             alert('Appa is still trapped in Basing Se')
         })
 })
+
+// Previous Avatars
+let previousAvatars = ['Korra', 'Aang', 'Roku', 'Kyoshi', 'Kuruk', 'Yangchen'];
+
+console.log('Previous Avatars:');
+previousAvatars.forEach(avatar => {
+    console.log(avatar);
+});
