@@ -24,6 +24,10 @@ Heb voor de info van de callback functie gebruik gemaakt van copilot: https://co
 
 Vraag aan ChatGPT om mijn project te beoordelen: https://chatgpt.com/share/e87a62d2-3cb1-4df3-99fa-e45569512040
 
+
+Hulp met het stijlen van de page: https://chatgpt.com/share/625af18c-6f1d-42a7-8c07-15939d2d3faf
+
+
 Foto's:
 (van boven op de pagina naar beneden)
 

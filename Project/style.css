@@ -1,27 +1,25 @@
 body{
     font-size: larger;
     background-color:#f9f9f9;
-    
 }
 
-main{
+main, #lok {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-
-    
     justify-content: center;
-
 }
 
-.section1{
+.section1, #lok .section1 {
     display: block;
     width: 1000px;
-   
     justify-content: center;
-
 }
 
+
+#titelH2{
+    text-align: center;
+}
 header {
     background-image: url("/Project/Foto's/avatar-the-last-airbender-Cropped.jpg");
     background-color: #333;
@@ -34,57 +32,54 @@ header {
     background-attachment: fixed;
 }
 
-.paginaTitle :hover{
+.paginaTitle :hover {
     text-decoration: none;
 }
 
-h1{
-    color:white;
+h1 {
+    color: white;
 }
 
-
-h2{
+h2 {
     color: #333;
     text-align: center;
 }
 
-a{
+a {
     text-align: center;
     text-decoration: none;
     color: #333;
-
-
 }
-#tt{
+
+#tt {
     text-align: center;
     text-decoration: none;
-    
 }
 
-a:hover{
+a:hover {
     color: blue;
 }
 
-p{
+p {
     display: block;
     text-align: center;
 }
 
-.myLittleForm{
+.myLittleForm {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
 }
-img{
+
+img {
     display: block;
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#bisonFly{
+#bisonFly {
     display: block;
     max-width: 50%;
     margin-left: auto;
@@ -93,48 +88,41 @@ img{
     animation-duration: 5s;
 }
 
-@keyframes bisonFlying{
+@keyframes bisonFlying {
     0% { transform: translateX(-200px); }
-    20%{transform: rotate(90deg);}
-    30%{transform: rotate(180deg);}
+    20% { transform: rotate(90deg); }
+    30% { transform: rotate(180deg); }
     50% { transform: translateX(300px); }
-    70%{transform: translateY(200px);}
-    85%{transform: rotate(275deg);}
-    100% { transform: translate(100px,100px);
-    }}
-    
+    70% { transform: translateY(200px); }
+    85% { transform: rotate(275deg); }
+    100% { transform: translate(100px, 100px); }
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: 2.5%;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
 
-   
-    
-    .container {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-        margin: 10px auto;
-        margin-top: 2.5%;
-        padding: 20px;
-        border: 5px solid black;
-        border-radius: 10px;
-        background-color: white;
-        text-align: center;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .container ul {
-        list-style: none; 
-        padding: 0; 
-    }
-    
-    .container ul li {
-        margin: 10px 0; 
-    }
-    
-    .container ul li img {
-        max-width: 200px; 
-    }
-    
-    
-    
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin: 10px 0;
+}
+
+.container ul li img {
+    max-width: 200px;
+}
